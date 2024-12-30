@@ -1,0 +1,38 @@
+.role-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.role-button {
+    background-color: white;
+    color: #6a11cb;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.role-button:hover {
+    background-color: #6a11cb;
+    color: white;
+    transform: scale(1.1);
+}

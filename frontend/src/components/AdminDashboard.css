@@ -1,0 +1,53 @@
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.add-user-form {
+    margin-bottom: 20px;
+}
+
+.add-user-form h2 {
+    margin-bottom: 10px;
+}
+
+.add-user-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-user-form form input,
+.add-user-form form select,
+.add-user-form form button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.users-table th {
+    background-color: #f4f4f4;
+}
+
+.delete-button {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}

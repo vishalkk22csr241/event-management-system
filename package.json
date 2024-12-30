@@ -1,0 +1,40 @@
+{
+  "name": "event_management_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"gnome-terminal -- npm run frontend\"  \"gnome-terminal -- npm run backend\" ",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && nodemon server.js",
+    "win-start": "start cmd /k \"npm run win-frontend\" && start cmd /k \"npm run win-backend\"",
+    "win-frontend": "cd frontend && npm start",
+    "win-backend": "cd backend && nodemon server.js",
+    "dev": "concurrently \"npm run dev-frontend\" && \"npm run dev-backend\" ",
+    "dev-frontend": "cd frontend && npm start",
+    "dev-backend": "cd backend && nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "bcrypt": "^5.1.1",
+    "concurrently": "^9.1.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "event_management_system": "file:",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7",
+    "react-router-dom": "^6.28.0",
+    "uuid": "^11.0.3"
+  }
+}
